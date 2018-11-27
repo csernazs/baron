@@ -423,6 +423,9 @@ def test_funcdef_stmt_indent():
             "fifth_formatting": [{"type": "space", "value": " "}],
             "sixth_formatting": [{"type": "space", "value": " "}],
             "arguments": [],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -476,6 +479,9 @@ def test_funcdef_stmt_async():
             "fifth_formatting": [],
             "sixth_formatting": [{"type": "space", "value": " "}],
             "arguments": [],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -561,6 +567,9 @@ def test_funcdef_stmt_one_parameter_indent():
                     "value": {},
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -629,6 +638,9 @@ def test_funcdef_stmt_one_parameter_typed_indent():
                     "value": {},
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -697,6 +709,9 @@ def test_funcdef_stmt_one_parameter_typed_indent_no_format():
                     "value": {},
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -764,6 +779,9 @@ def test_funcdef_stmt_star_parameter_typed_indent_no_format():
                     },
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -831,6 +849,9 @@ def test_funcdef_stmt_double_star_parameter_typed_indent_no_format():
                     },
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -900,6 +921,9 @@ def test_funcdef_stmt_one_parameter_comma_indent():
                     "second_formatting": [{"type": "space", "value": " "}],
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -975,6 +999,9 @@ def test_funcdef_stmt_one_parameter_comma_default_indent():
                     "second_formatting": [{"type": "space", "value": " "}],
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -1087,6 +1114,9 @@ def test_funcdef_stmt_two_parameters_typed_with_default_indent():
                     "value": {},
                 },
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -1303,6 +1333,9 @@ def test_funcdef_stmt_one_start_parameter_indent():
                     }
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -1365,6 +1398,9 @@ def test_funcdef_stmt_one_star_star_parameter_indent():
                     }
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "endl",
@@ -1865,6 +1901,9 @@ def test_decorator():
                     "value": "\n",
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -1940,6 +1979,9 @@ def test_decorator_parenthesis():
                     "value": "\n",
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -2027,6 +2069,9 @@ def test_decorator_parenthesis_arg():
                     "value": "\n",
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -2117,6 +2162,9 @@ def test_decorator_two():
                     "value": "\n",
                 }
             ],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -2342,6 +2390,9 @@ def test_fplist():
             "decorators": [],
             "async": False,
             "async_formatting": [],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -2418,6 +2469,9 @@ def test_fplist_two():
             "decorators": [],
             "async": False,
             "async_formatting": [],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -2480,6 +2534,9 @@ def test_fplist_alone():
             "decorators": [],
             "async": False,
             "async_formatting": [],
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             "value": [
                 {
                     "type": "pass",
@@ -2582,6 +2639,9 @@ def test_regression_def_argument_tuple():
             'sixth_formatting': [],
             'third_formatting': [],
             'type': 'def',
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             'value': [
                 {
                     'formatting': [],
@@ -2701,6 +2761,9 @@ def test_regression_def_argument_tuple_nested():
             'sixth_formatting': [],
             'third_formatting': [],
             'type': 'def',
+            "rtype": False,
+            "rtype_formatting_after": False,
+            "rtype_formatting_before": False,
             'value': [
                 {
                     'formatting': [],
@@ -2718,5 +2781,123 @@ def test_regression_def_argument_tuple_nested():
                     'value': '\n'
                 }
             ]
+        }
+    ])
+
+
+def test_funcdef_return_type_int():
+    """
+    def a () -> int:
+        pass
+    """
+    parse_multi([
+        ('DEF', 'def', [], [('SPACE', ' ')]),
+        ('NAME', 'a'),
+        ('LEFT_PARENTHESIS', '(', [('SPACE', ' ')]),
+        ('RIGHT_PARENTHESIS', ')'),
+        ('MINUS', '-'),
+        ('GREATER', '>'),
+        ('NAME', 'int'),
+        ('COLON', ':', [('SPACE', ' ')], [('SPACE', ' ')]),
+        ('ENDL', '\n', [], [('SPACE', '    ')]),
+        ('INDENT', ''),
+        ('PASS', 'pass'),
+        ('ENDL', '\n'),
+        ('DEDENT', ''),
+    ], [
+        {
+            "type": "def",
+            "name": "a",
+            "decorators": [],
+            "async": False,
+            "async_formatting": [],
+            "first_formatting": [{"type": "space", "value": " "}],
+            "second_formatting": [{"type": "space", "value": " "}],
+            "third_formatting": [],
+            "fourth_formatting": [],
+            "fifth_formatting": [{"type": "space", "value": " "}],
+            "sixth_formatting": [{"type": "space", "value": " "}],
+            "arguments": [],
+            "rtype": {'type': 'name', 'value': 'int'},
+            "rtype_formatting_after": [],
+            "rtype_formatting_before": [],
+            "value": [
+                {
+                    "type": "endl",
+                    "value": "\n",
+                    "formatting": [],
+                    "indent": "    "
+                },
+                {
+                    "type": "pass",
+                },
+                {
+                    "type": "endl",
+                    "formatting": [],
+                    "indent": "",
+                    "value": "\n"
+                }
+            ],
+        }
+    ])
+
+
+def test_funcdef_return_type_optional():
+    """
+    def a() -> Optional[int]:
+        pass
+    """
+    parse_multi([
+        ('DEF', 'def', [], [('SPACE', ' ')]),
+        ('NAME', 'a'),
+        ('LEFT_PARENTHESIS', '(', [('SPACE', ' ')]),
+        ('RIGHT_PARENTHESIS', ')'),
+        ('MINUS', '-', [('SPACE', ' ')]),
+        ('GREATER', '>', [], [('SPACE', ' ')]),
+        ('NAME', 'Optional'),
+        ('LEFT_SQUARE_BRACKET', '['),
+        ('NAME', 'int'),
+        ('RIGHT_SQUARE_BRACKET', ']'),
+        ('COLON', ':'),
+        ('ENDL', '\n', [], [('SPACE', '    ')]),
+        ('INDENT', ''),
+        ('PASS', 'pass'),
+        ('ENDL', '\n'),
+        ('DEDENT', ''),
+    ], [
+        {
+            "arguments": [],
+            "async": False,
+            "async_formatting": [],
+            "decorators": [],
+            "fifth_formatting": [],
+            "first_formatting": [{"type": "space", "value": " "}],
+            "fourth_formatting": [],
+            "name": "a",
+            "rtype": {
+                "type": "atomtrailers",
+                "value": [
+                    {"type": "name", "value": "Optional"},
+                    {
+                        "first_formatting": [],
+                        "fourth_formatting": [],
+                        "second_formatting": [],
+                        "third_formatting": [],
+                        "type": "getitem",
+                        "value": {"type": "name", "value": "int"},
+                    },
+                ],
+            },
+            "rtype_formatting_after": [{"type": "space", "value": " "}],
+            "rtype_formatting_before": [{"type": "space", "value": " "}],
+            "second_formatting": [{"type": "space", "value": " "}],
+            "sixth_formatting": [],
+            "third_formatting": [],
+            "type": "def",
+            "value": [
+                {"formatting": [], "indent": "    ", "type": "endl", "value": "\n"},
+                {"type": "pass"},
+                {"formatting": [], "indent": "", "type": "endl", "value": "\n"},
+            ],
         }
     ])

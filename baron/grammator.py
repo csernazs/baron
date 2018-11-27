@@ -381,8 +381,18 @@ def generate_parse(print_function):
         }] + endl
 
     @pg.production("funcdef : async_maybe DEF NAME LEFT_PARENTHESIS typed_parameters RIGHT_PARENTHESIS COLON suite")
+    @pg.production("funcdef : async_maybe DEF NAME LEFT_PARENTHESIS typed_parameters RIGHT_PARENTHESIS MINUS GREATER test COLON suite")
     def function_definition(pack):
-        (async_maybe, def_, name, left_parenthesis, typed_parameters, right_parenthesis, colon, suite) = pack
+        if len(pack) == 8:
+            (async_maybe, def_, name, left_parenthesis, typed_parameters, right_parenthesis, colon, suite) = pack
+            rtype = False
+            rtype_formatting_before = False
+            rtype_formatting_after = False
+        elif len(pack) == 11:
+            (async_maybe, def_, name, left_parenthesis, typed_parameters, right_parenthesis, minus, greater, rtype, colon, suite) = pack
+            rtype_formatting_before = minus.hidden_tokens_before
+            rtype_formatting_after = greater.hidden_tokens_after
+
 
         if async_maybe["async"] and async_maybe["value"] != "async":
             raise ParsingError("The only possible keyword before a 'def' is 'async', not '%s'" % async_maybe["value"])
@@ -401,6 +411,9 @@ def generate_parse(print_function):
             "sixth_formatting": colon.hidden_tokens_after,
             "arguments": typed_parameters,
             "value": suite,
+            "rtype": rtype,
+            "rtype_formatting_before": rtype_formatting_before,
+            "rtype_formatting_after": rtype_formatting_after,
         }]
 
     @pg.production("argslist : argslist argument")

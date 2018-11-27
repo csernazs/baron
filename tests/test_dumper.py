@@ -611,3 +611,11 @@ def test_crash_issue_85():
 def test_keyword_only_marker():
     check_dumps("def foo(a, *, b, c):    pass\n")
     check_dumps("def foo(a, *  , b, c):    pass\n")
+
+
+def test_funcdef_rtype():
+    check_dumps("def foo() -> int: pass\n")
+    check_dumps("def foo()   -> int: pass\n")
+    check_dumps("def foo() ->   int: pass\n")
+    check_dumps("def foo()  : pass\n")
+    check_dumps("def foo() -> int   :  pass\n")
